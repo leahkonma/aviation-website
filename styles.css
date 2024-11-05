@@ -96,10 +96,10 @@ nav ul li {
 }
 
 article {
-  float: left;
+  float: right;
   padding: 50px;
-  width: 25%;
-  align-content: left;
+  width: 15%;
+  align-content: right;
   background-color: #bdb9b99d;
 }
 
