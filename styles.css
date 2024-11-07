@@ -162,4 +162,17 @@ footer p {
   .footer-column {
     width: 100%;
   }
+  video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+  }
+
+  .video-container iframe {
+    width: 80%;
+    max-width: 600px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+  }
 }
