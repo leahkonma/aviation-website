@@ -96,7 +96,7 @@ nav ul li {
 }
 
 article {
-  float: right;
+  float: left;
   padding: 50px;
   width: 15%;
   align-content: right;
