@@ -9,10 +9,12 @@
     "contactimage1 info1"
     "contactimage2 info2"
     "contactimage3 info3"
-    "contactimage4 info4";
+    "contactimage4 info4"
+    "contactimage5 info5"
+    "contactimage6 info6";
 }
 
-#info1, #info2 {
+#info1, #info2, #info3, #info4, #info5, #info6 {
     padding-left: 5%;
     padding-top: 5%;
 }
