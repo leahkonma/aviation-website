@@ -21,4 +21,10 @@
 
 div img {
     width: 240px;
+    padding-bottom: 5%;
 }
+
+p {
+    font-weight: bold;
+}
+
