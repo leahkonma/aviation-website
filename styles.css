@@ -39,7 +39,6 @@ header h2 {
   flex-grow: 1;
 }
 
-/* Navigation styling */
 nav {
   width: 100%;
   background-color: #333;
@@ -62,7 +61,7 @@ nav ul li {
 
 .article {
   float: right;
-  width: 300px; /* Adjust the width as needed */
+  width: 300px;
   background-color: #f2f2f2;
   padding: 20px;
   margin-right: 10px;
@@ -90,7 +89,6 @@ nav ul li {
   background-color: #555;
 }
 
-/* Show dropdown on hover */
 .dropdown:hover .dropdown-content {
   display: block;
 }
@@ -107,6 +105,40 @@ section::after {
   content: "";
   display: table;
   clear: both;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.video-container iframe {
+  width: 70%;
+  max-width: 800px;
+  aspect-ratio: 16 / 9;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+.clickable-image img {
+  width: 200px;
+  height: auto;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.clickable-image img:hover {
+  transform: scale(1.05);
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
 }
 
 footer {
@@ -159,20 +191,20 @@ footer p {
   .footer-container {
     flex-direction: column;
   }
+
   .footer-column {
     width: 100%;
   }
-  video-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; 
+
+  .video-container {
+    flex-direction: column;
   }
 
   .video-container iframe {
-    width: 80%;
-    max-width: 600px;
-    border: 2px solid #ccc;
-    border-radius: 8px;
+    width: 100%;
+  }
+
+  .clickable-image img {
+    width: 100%;
   }
 }
