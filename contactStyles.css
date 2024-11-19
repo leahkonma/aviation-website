@@ -4,7 +4,7 @@
     margin: 3%;
     background-color: #bdb9b99d;
     padding: 50px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     grid-template-areas:
     "contactimage1 info1"
     "contactimage2 info2"
@@ -20,11 +20,12 @@
 }
 
 div img {
-    width: 240px;
-    padding-bottom: 5%;
+    width: 360px;
+    padding-bottom: 3%;
 }
 
 p {
     font-weight: bold;
+    font-size: 25px;
 }
 
