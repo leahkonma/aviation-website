@@ -2,6 +2,8 @@
     display: grid;
     grid-gap: 30px;
     margin: 3%;
+    width: 90%;
+    /*align-items: center;*/
     background-color: #bdb9b99d;
     padding: 50px;
     grid-template-columns: 1fr 2fr;
