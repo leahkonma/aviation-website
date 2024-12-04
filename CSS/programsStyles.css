@@ -97,16 +97,3 @@ p {
 .linksToDegrees:hover {
     color: white;
 }
-
-footer {
-    background-color: #808080;
-    margin: 3rem 0 0 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas:
-    "Section-1" "Section-2" "Section-3";
-}
-
-.footerSection {
-    margin: auto;
-}
