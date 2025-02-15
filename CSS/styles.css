@@ -130,6 +130,17 @@ p {
   padding: 0 20px;
 }
 
+/* Faculty Contact Page */
+.staff-img{
+  width: 80%;
+  height: 370px;
+  object-fit: cover;
+}
+
+.faculty-container{
+  background-color: #bdb9b99d;
+}
+
 /* Footer Styling */
 footer {
   background-color: #808080;
