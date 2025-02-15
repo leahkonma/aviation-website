@@ -16,78 +16,6 @@ main {
   flex: 1;
 }
 
-/* Header Styling */
-header {
-  background-color: #1d7c25;
-  padding: 30px;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-header img {
-  position: absolute;
-  top: 0;
-  left: 10px;
-  max-width: 106px;
-  height: auto;
-}
-
-header h2 {
-  margin: 0;
-  text-align: center;
-  flex-grow: 1;
-}
-
-/* Navigation Bar */
-nav {
-  width: 100%;
-  background-color: #333;
-}
-
-nav ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-around;
-  padding: 0;
-  margin: 0;
-}
-
-nav ul li {
-  position: relative;
-  padding: 15px;
-  color: white;
-  cursor: pointer;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #444;
-  min-width: 160px;
-  z-index: 1;
-  padding: 10px 0;
-}
-
-.dropdown-content a {
-  color: white;
-  padding: 10px;
-  display: block;
-  text-decoration: none;
-}
-
-.dropdown-content a:hover {
-  background-color: #555;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
 /* Video Section */
 .video-container {
   display: flex;
@@ -128,17 +56,6 @@ p {
   text-align: justify;
   margin: 10px 0;
   padding: 0 20px;
-}
-
-/* Faculty Contact Page */
-.staff-img{
-  width: 80%;
-  height: 370px;
-  object-fit: cover;
-}
-
-.faculty-container{
-  background-color: #bdb9b99d;
 }
 
 /* Footer Styling */

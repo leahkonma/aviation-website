@@ -1,4 +1,4 @@
-ul {
+#info-list {
     list-style-type: none;
     display: grid;
     grid-gap: 30px;
@@ -6,8 +6,4 @@ ul {
     background-color: #bdb9b99d;
     padding: 50px;
     grid-template-columns: 1fr 1fr;
-}
-
-#nav {
-    background-color: #333;
 }
