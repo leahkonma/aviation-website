@@ -104,12 +104,7 @@ footer {
 }
 
 /* Faculty Contact Page */
-.staff-img{
-  width: 80%;
-  height: 370px;
+.staff-img {
+  height: 300px;
   object-fit: cover;
-}
-
-.faculty-container{
-  background-color: #bdb9b99d;
 }
