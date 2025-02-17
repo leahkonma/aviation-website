@@ -1,9 +1,0 @@
-#info-list {
-    list-style-type: none;
-    display: grid;
-    grid-gap: 30px;
-    margin: 2%;
-    background-color: #bdb9b99d;
-    padding: 50px;
-    grid-template-columns: 1fr 1fr;
-}

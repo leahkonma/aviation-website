@@ -49,12 +49,10 @@ nav {
       justify-content: space-around;
   }
   
-  .nav-list-item {
+  .nav-list-item, a{
       list-style-type: none;
-
-      a {
-          color: white;
-      }
+      text-decoration: none;
+      color: white;
   }
 }
 
@@ -88,45 +86,24 @@ nav {
   transform: scale(1.05);
 }
 
-/* Text Styling */
-h1, h2 {
-  text-align: center;
-  margin-top: 20px;
-}
-
-p {
-  text-align: justify;
-  margin: 10px 0;
-  padding: 0 20px;
-}
-
-/* Footer Styling */
+/* Footer */
 footer {
   background-color: #808080;
-  color: #fff;
-  padding: 20px 0;
+  padding: 20px;
   text-align: center;
 }
 
 .footer-container {
-  display: flex;
-  justify-content: space-around;
-  max-width: 1200px;
+  background-color: #f4f4f4;
+  color: #333;
+  max-width: 60%;
   margin: 0 auto;
 }
 
-.footer-column {
-  flex: 1;
-  padding: 0 20px;
-}
-
+/* Embedded Video */
 @media (max-width: 600px) {
   .footer-container {
     flex-direction: column;
-  }
-
-  .footer-column {
-    width: 100%;
   }
 
   .video-container {
@@ -140,6 +117,18 @@ footer {
   .clickable-image img {
     width: 100%;
   }
+}
+
+/* Resources Page */
+#info-list {
+  list-style-type: none;
+  display: grid;
+  grid-gap: 20px;
+  margin: 2%;
+  background-color: #bdb9b99d;
+  padding: 50px;
+  grid-template-columns: 1fr 1fr;
+  text-decoration: none;
 }
 
 /* Faculty Contact Page */
