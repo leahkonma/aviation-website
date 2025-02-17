@@ -1,9 +1,4 @@
 /* General Styling */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -12,11 +7,7 @@ body {
   min-height: 100vh;
 }
 
-main {
-  flex: 1;
-}
-
-/* Header and Navbar Styles */
+/* Header*/
 header {
   width: 100%;
   height: 5rem;
@@ -27,18 +18,18 @@ header {
   background-color: #1d7c25;
 
   img {
-      height: inherit;
-      position: absolute;
-      left: 0;
+    height: inherit;
+    position: absolute;
+    left: 0;
   }
 
   h2 {
-      width: 100%;
-      margin: 0;
-      color: white;
+    margin: 0;
+    color: white;
   }
 }
 
+/* Navbar */
 nav {
   background-color: #333333;
   padding: 1rem;
@@ -73,6 +64,7 @@ nav {
   border-radius: 8px;
 }
 
+/* Flying Gator Newsletter */
 .clickable-image img {
   width: 200px;
   height: auto;
