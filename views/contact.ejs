@@ -10,20 +10,8 @@
   </head>
 
   <body>
-    <header>
-      <img src="../Images/GRC-Aviation-Logo.jfif" alt="Website Logo">
-      <h2>Aviation Technology</h2>
-    </header>
-
-    <!-- Nav Bar -->
-    <nav>
-      <ul id="nav-list" class="mb-0">
-        <li class="nav-list-item"><a href="index.html">Home</a></li>
-        <li class="nav-list-item"><a href="resources.html">Resources</a></li>
-        <li class="nav-list-item"><a href="programs.html">Programs</a></li>
-        <li class="nav-list-item"><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+    <!-- Include header/navbar -->
+    <%- include('navbar') %>
 
     <h1 class="text-center m-4">Faculty Contact</h1>
 
@@ -103,6 +91,8 @@
 
       </div>
     </div>
-
+    
+    <!-- Footer -->
+    <%- include('footer') %>
   </body>
 </html>

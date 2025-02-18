@@ -11,20 +11,8 @@
   </head>
 
   <body>
-    <header>
-      <img src="./../Images/GRC-Aviation-Logo.jfif" alt="Website Logo">
-      <h2>Aviation Technology</h2>
-    </header>
-
-    <!-- Nav Bar -->
-    <nav>
-      <ul id="nav-list" class="mb-0">
-        <li class="nav-list-item"><a href="index.html">Home</a></li>
-        <li class="nav-list-item"><a href="resources.html">Resources</a></li>
-        <li class="nav-list-item"><a href="programs.html">Programs</a></li>
-        <li class="nav-list-item"><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+    <!-- Include header/navbar -->
+    <%- include('navbar') %>
 
     <h1 class="text-center m-4">Welcome To Aviation Technology</h1>
 
@@ -64,48 +52,8 @@
         </a>
       </div>
     </div>
+
+    <!-- Footer -->
+    <%- include('footer') %>
   </body>
-
-  <footer>
-    <div class="footer-container p-4 ">
-      <div class="row">
-        <!-- Title Column -->
-        <div class="col-4">
-          <h4>Title</h4>
-          <p class="m-0">
-            BAS - Aviation Program Director <br>
-            Aviation Instructor <br>
-            Aviation Instructor <br>
-            Aviation Program Manager<br>
-            Aviation Program Coordinator
-          </p>
-        </div>
-
-        <!-- Staff Name -->
-        <div class="col-4">
-          <h4>Staff</h4>
-          <p class="m-0">
-            George Comollo <br>
-            Tad Henry <br>
-            Frank Cantwell <br>
-            Affie Eyo <br>
-            Carlton lawson
-          </p>
-        </div>
-
-        <!-- Email -->
-        <div class="col-4">
-          <h4>Email</h4>
-          <p class="m-0">
-            <a href="mailto:gcomollo@greenriver.edu">gcomollo@greenriver.edu</a> <br>
-            <a href="mailto:tahenry@greenriver.edu">tahenry@greenriver.edu</a> <br>
-            <a href="mailto:fcantwell@greenriver.edu">fcantwell@greenriver.edu</a> <br>
-            <a href="mailto:affiong.eyo@greenriver.edu">affiong.eyo@greenriver.edu</a> <br>
-            <a href="mailto:carlton.lawson@greenriver.edu">carlton.lawson@greenriver.edu</a>
-          </p>
-        </div>
-      </div>
-    </div>
-  </footer>
- 
 </html>
