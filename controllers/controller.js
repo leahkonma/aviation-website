@@ -47,3 +47,15 @@ export const getResources = (req, res) => {
 export const getContact = (req, res) => {
     res.render('contact', null);
 }
+
+
+/**
+ * Renders the Program Outline page.
+ * 
+ * @function getProgramOutline
+ * @param {Object} req - The request object.
+ * @param {Object} res - The response object.
+ */
+export const getProgramOutline = (req, res) => {
+    res.render('program-outline', null);
+}

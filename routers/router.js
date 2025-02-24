@@ -5,7 +5,7 @@
  */
 
 import { Router } from 'express';
-import { getHome, getPrograms, getContact, getResources } from './../controllers/controller.js';
+import { getHome, getPrograms, getContact, getResources, getProgramOutline } from './../controllers/controller.js';
 
 const router = Router();
 
@@ -14,5 +14,6 @@ router.get('/', getHome);
 router.get('/programs', getPrograms);
 router.get('/contact', getContact);
 router.get('/resources', getResources);
+router.get('/program-outline', getProgramOutline)
 
 export default router;
