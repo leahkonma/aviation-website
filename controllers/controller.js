@@ -12,7 +12,7 @@
  * @param {Object} res - The response object.
  */
 export const getHome = (req, res) => {
-    res.render('index', null);
+    res.render('index', {title: 'GRC Aviation'});
 }
 
 /**
@@ -23,7 +23,7 @@ export const getHome = (req, res) => {
  * @param {Object} res - The response object.
  */
 export const getPrograms = (req, res) => {
-    res.render('programs', null);
+    res.render('programs', {title: 'Programs'});
 }
 
 /**
@@ -34,7 +34,7 @@ export const getPrograms = (req, res) => {
  * @param {Object} res - The response object.
  */
 export const getResources = (req, res) => {
-    res.render('resources', null);
+    res.render('resources', {title: 'Resources'});
 }
 
 /**
@@ -45,7 +45,7 @@ export const getResources = (req, res) => {
  * @param {Object} res - The response object.
  */
 export const getContact = (req, res) => {
-    res.render('contact', null);
+    res.render('contact', {title: 'Contact'});
 }
 
 
@@ -57,5 +57,5 @@ export const getContact = (req, res) => {
  * @param {Object} res - The response object.
  */
 export const getProgramOutline = (req, res) => {
-    res.render('program-outline', null);
+    res.render('program-outline', {title: 'Program Outline'});
 }

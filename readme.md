@@ -98,10 +98,14 @@ This website provides information and resources for Green River aviation student
 
 #### Adding a view
 1. Create a .ejs file for your view in the views directory
-2. Include the navbar.ejs file and footer.ejs file in your view
+2. Include the head.ejs file, navbar.ejs file, and footer.ejs file in your view
     - Ex:
 
         ```
+        <%- include('head') %>
+
+        ...
+
         <%- include('navbar') %>
 
         Your other code here...
@@ -114,9 +118,11 @@ This website provides information and resources for Green River aviation student
 
         ```
         export const getViewNameHere = (req, res) => {
-            res.render('viewNameHere', null);
+            res.render('viewNameHere', {title: 'View Title Here'});
         }
         ```
+
+    - Note: add the webpage title as an argument of the render function as seen above
 
 4. Import the controller method into the router.js file in the routers directory
 5. Define a route for this view in the router.js file
