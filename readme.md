@@ -1,9 +1,6 @@
 # Aviation Technology Website
-
-### Description:
 This website provides information and resources for Green River aviation students, prospective students, and alumni.
 
-</br>
 <hr>
 
 ### Table of Contents
@@ -83,7 +80,7 @@ This website provides information and resources for Green River aviation student
 2. Complete the development configurations
 3. Learn about adding and editing views [`here`](#adding-and-editing-views)
 4. Write/update code documentation
-5. Update the readme file
+5. Update the README file
 
 </br>
 <hr>

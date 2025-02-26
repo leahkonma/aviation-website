@@ -32,15 +32,15 @@ nav {
   padding: 1rem;
 
   #nav-list {
-      width: 100%;
-      display: flex;
-      justify-content: space-around;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
   }
   
-  .nav-link {
-      list-style-type: none;
-      text-decoration: none;
-      color: white;
+  .nav-link, .nav-link:hover{
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
   }
 }
 
