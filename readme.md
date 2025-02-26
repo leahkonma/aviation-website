@@ -49,7 +49,7 @@ This website provides information and resources for Green River aviation student
 2. Run this npm command to install all dependencies:
 
     ``` 
-    npm update 
+    npm install 
     ```
 
     Or manually install dependencies:

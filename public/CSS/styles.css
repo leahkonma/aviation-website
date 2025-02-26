@@ -18,6 +18,12 @@ header {
     margin: 0;
     color: white;
   }
+
+  .button-light {
+    background-color: #1d7c25;
+    color: white;
+    border: solid white 1px;
+  }
 }
 
 /* Navbar */
@@ -31,7 +37,7 @@ nav {
       justify-content: space-around;
   }
   
-  .nav-list-item, a{
+  .nav-link {
       list-style-type: none;
       text-decoration: none;
       color: white;
@@ -107,4 +113,25 @@ footer {
 .staff-img {
   height: 300px;
   object-fit: cover;
+}
+
+
+/* Mobile styling */
+@media (max-width: 500px) {
+  header {
+    height: 4rem;
+  }
+
+  #site-title {
+    font-size: large;
+  }
+
+  .footer-container {
+    max-width: 95%;
+
+    .footer-list {
+      display: flex;
+      justify-content: center;
+    }
+  }
 }
