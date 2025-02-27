@@ -4,6 +4,12 @@
  * @author Yadira Cervantes
  */
 
+import path from "path";
+import { fileURLToPath } from "url";
+
+// Workaround for __dirname in ES Modules
+const __filename = fileURLToPath(import.meta.url); 
+const __dirname = path.dirname(__filename);
 /**
  * Renders the home page.
  * 
@@ -58,4 +64,15 @@ export const getContact = (req, res) => {
  */
 export const getProgramOutline = (req, res) => {
     res.render('program-outline', {title: 'Program Outline'});
+}
+
+export const getDispachTrackAviationTechPlan = (req, res) => { 
+    const fileName = req.params.fileName; 
+    const filePath = path.join(__dirname, "..", "public", "Files", fileName);
+    console.log(filePath)
+    res.sendFile(filePath, (err) => {
+        if (err) {
+            res.status(500).send("Error downloading file.");
+        }
+    });
 }
