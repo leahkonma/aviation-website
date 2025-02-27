@@ -3,43 +3,48 @@
     <%- include('./components/head') %>
     <body>
         <%- include('./components/navbar') %>
+        <div class="m-4">
 
-        <h1 class="text-center m-4">Program Outline</h1>
-        <!-- begining of the list  -->
-        <div class="container mt-4">
-            <ul class="list-group">
-                <li class="list-group-item">
-                   <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="http://localhost:8001/documents/dispatchTrackTechPlan.pdf" data-bs-toggle="modal" data-bs-target="#pdfModal" onclick="setPdfSrc(this)">Dispatch Track Aviation Technology Academic Plan</a>
-                </li>
-                <li class="list-group-item">
-                    <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="http://localhost:8001/documents/ATCTrack.pdf" data-bs-toggle="modal" data-bs-target="#pdfModal" onclick="setPdfSrc(this)">Air Track Control Track Aviation Technology Academic Plan</a>
-                 </li>
-                 <li class="list-group-item">
-                    <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="http://localhost:8001/documents/AviationManagement.pdf" data-bs-toggle="modal" data-bs-target="#pdfModal" onclick="setPdfSrc(this)">Aviation Management Aviation Technology Academic Plan</a>
-                 </li>
-                 <li class="list-group-item">
-                    <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="http://localhost:8001/documents/pilotTrack.pdf" data-bs-toggle="modal" data-bs-target="#pdfModal" onclick="setPdfSrc(this)">Pilot Track Aviation Technology Academic Plan </a>
-                 </li>
-                 <li class="list-group-item">
-                    <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="http://localhost:8001/documents/BASAnnualSchedule.pdf" data-bs-toggle="modal" data-bs-target="#pdfModal" onclick="setPdfSrc(this)">BAS Annual Schedule</a>
-                 </li>
-            </ul>
-        </div>
+       
+            <h1 class="text-center m-4">Program Outline</h1>
+            <!-- begining of the list  -->
+            <div class="container mt-4">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                    <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="http://localhost:8001/documents/dispatchTrackTechPlan.pdf" data-bs-toggle="modal" data-bs-target="#pdfModal" onclick="setPdfSrc(this)">Dispatch Track Aviation Technology Academic Plan</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="http://localhost:8001/documents/ATCTrack.pdf" data-bs-toggle="modal" data-bs-target="#pdfModal" onclick="setPdfSrc(this)">Air Track Control Track Aviation Technology Academic Plan</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="http://localhost:8001/documents/AviationManagement.pdf" data-bs-toggle="modal" data-bs-target="#pdfModal" onclick="setPdfSrc(this)">Aviation Management Aviation Technology Academic Plan</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="http://localhost:8001/documents/pilotTrack.pdf" data-bs-toggle="modal" data-bs-target="#pdfModal" onclick="setPdfSrc(this)">Pilot Track Aviation Technology Academic Plan </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="http://localhost:8001/documents/BASAnnualSchedule.pdf" data-bs-toggle="modal" data-bs-target="#pdfModal" onclick="setPdfSrc(this)">BAS Annual Schedule</a>
+                    </li>
+                </ul>
+            </div>
 
-        <!-- Bootstrap Modal -->
-        <div class="modal fade" id="pdfModal" tabindex="-1" aria-labelledby="pdfModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="clearPdfSrc()"></button>
-                    </div>
-                    <div class="modal-body">
-                        <iframe src="" width="100%" height="500px" id="pdfViewer"></iframe>
+            <!-- Bootstrap Modal -->
+            <div class="modal fade" id="pdfModal" tabindex="-1" aria-labelledby="pdfModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="clearPdfSrc()"></button>
+                        </div>
+                        <div class="modal-body">
+                            <iframe src="" width="100%" height="500px" id="pdfViewer"></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
+            <!-- end  of the list -->
+            <!-- Footer -->
         </div>
-        <!-- end  of the list -->
+        <%- include('./components/footer') %>
 
         <!-- JavaScript to handle the PDF loading -->
         <script>
