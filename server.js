@@ -5,9 +5,9 @@
  * @author Yadira Cervantes
  */
 
-import express from 'express';
-import router from './routers/router.js';
-import dotenv from 'dotenv';
+const express = require('express');
+const router = require('./routers/router.js');
+const dotenv = require('dotenv');
 
 // Configure dotenv
 dotenv.config({
@@ -27,4 +27,6 @@ app.use(express.static('./public'));
 // Mount router
 app.use('/', router);
 
-app.listen(PORT, console.log(`Running on http://localhost:${PORT}`));
+app.listen(PORT, () => {
+    console.log(`Running on http://localhost:${PORT}`);
+});

@@ -4,12 +4,8 @@
  * @author Yadira Cervantes
  */
 
-import path from "path";
-import { fileURLToPath } from "url";
+const path = require("path");
 
-// Workaround for __dirname in ES Modules
-const __filename = fileURLToPath(import.meta.url); 
-const __dirname = path.dirname(__filename);
 /**
  * Renders the home page.
  * 
@@ -17,7 +13,7 @@ const __dirname = path.dirname(__filename);
  * @param {Object} req - The request object.
  * @param {Object} res - The response object.
  */
-export const getHome = (req, res) => {
+const getHome = (req, res) => {
     res.render('index', {title: 'GRC Aviation'});
 }
 
@@ -28,7 +24,7 @@ export const getHome = (req, res) => {
  * @param {Object} req - The request object.
  * @param {Object} res - The response object.
  */
-export const getPrograms = (req, res) => {
+const getPrograms = (req, res) => {
     res.render('programs', {title: 'Programs'});
 }
 
@@ -39,7 +35,7 @@ export const getPrograms = (req, res) => {
  * @param {Object} req - The request object.
  * @param {Object} res - The response object.
  */
-export const getResources = (req, res) => {
+const getResources = (req, res) => {
     res.render('resources', {title: 'Resources'});
 }
 
@@ -50,7 +46,7 @@ export const getResources = (req, res) => {
  * @param {Object} req - The request object.
  * @param {Object} res - The response object.
  */
-export const getContact = (req, res) => {
+const getContact = (req, res) => {
     res.render('contact', {title: 'Contact'});
 }
 
@@ -62,11 +58,11 @@ export const getContact = (req, res) => {
  * @param {Object} req - The request object.
  * @param {Object} res - The response object.
  */
-export const getProgramOutline = (req, res) => {
+const getProgramOutline = (req, res) => {
     res.render('program-outline', {title: 'Program Outline'});
 }
 
-export const getDispachTrackAviationTechPlan = (req, res) => { 
+const getDispachTrackAviationTechPlan = (req, res) => { 
     const fileName = req.params.fileName; 
     const filePath = path.join(__dirname, "..", "public", "Files", fileName);
     console.log(filePath)
@@ -76,3 +72,12 @@ export const getDispachTrackAviationTechPlan = (req, res) => {
         }
     });
 }
+
+module.exports = {
+    getHome,
+    getPrograms,
+    getResources,
+    getContact,
+    getProgramOutline,
+    getDispachTrackAviationTechPlan
+};

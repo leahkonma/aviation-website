@@ -4,8 +4,8 @@
  * @author Yadira Cervantes
  */
 
-import { Router } from 'express';
-import { getHome, getPrograms, getContact, getResources, getProgramOutline, getDispachTrackAviationTechPlan } from './../controllers/controller.js';
+const { Router } = require('express');
+const { getHome, getPrograms, getContact, getResources, getProgramOutline, getDispachTrackAviationTechPlan } = require('./../controllers/controller.js');
 
 const router = Router();
 
@@ -14,9 +14,9 @@ router.get('/', getHome);
 router.get('/programs', getPrograms);
 router.get('/contact', getContact);
 router.get('/resources', getResources);
-router.get('/program-outline', getProgramOutline)
+router.get('/program-outline', getProgramOutline);
 
-// program outline router for pdf files
-router.get('/documents/:fileName', getDispachTrackAviationTechPlan)
+// Program outline router for PDF files
+router.get('/documents/:fileName', getDispachTrackAviationTechPlan);
 
-export default router;
+module.exports = router;
