@@ -62,6 +62,28 @@ const getProgramOutline = (req, res) => {
     res.render('program-outline', {title: 'Program Outline'});
 }
 
+/**
+ * Renders the FAQ page.
+ * 
+ * @function getProgramOutline
+ * @param {Object} req - The request object.
+ * @param {Object} res - The response object.
+ */
+const getFAQ = (req, res) => {
+    res.render('faq', {title: 'FAQ'});
+}
+
+/**
+ * Renders the documents page.
+ * 
+ * @function getProgramOutline
+ * @param {Object} req - The request object.
+ * @param {Object} res - The response object.
+ */
+const getDocuments = (req, res) => {
+    res.render('documents', {title: 'Documents'});
+}
+
 const getDispachTrackAviationTechPlan = (req, res) => { 
     const fileName = req.params.fileName; 
     const filePath = path.join(__dirname, "..", "public", "Files", fileName);
@@ -79,5 +101,7 @@ module.exports = {
     getResources,
     getContact,
     getProgramOutline,
-    getDispachTrackAviationTechPlan
+    getDispachTrackAviationTechPlan,
+    getFAQ, 
+    getDocuments
 };
