@@ -1,11 +1,59 @@
 <!DOCTYPE html>
-  <html lang="en">
+<html lang="en">
   <%- include('./components/head') %>
-
   <body>
     <!-- Include header/navbar -->
     <%- include('./components/navbar') %>
-    <h1>DUCOMENTS PAGE TESTING </h1>
+
+    <h1 class="text-center m-4">Documents Page</h1>
+
+    <main class="container">
+      <div class="row">
+        <!-- Classes -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h2 class="card-title mb-3 text-center">Class Material</h2>
+              <ul class="list-unstyled">
+                <li><a class="linksToDegrees d-block mb-2" href="#" target="_blank">Class Document 1</a></li>
+                <li><a class="linksToDegrees d-block mb-2" href="#" target="_blank">Class Document 2</a></li>
+                <li><a class="linksToDegrees d-block mb-2" href="#" target="_blank">Class Document 3</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Internet -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h2 class="card-title mb-3 text-center">Internet Material</h2>
+              <ul class="list-unstyled">
+                <li><a class="linksToDegrees d-block mb-2" href="#" target="_blank">Internet Resource 1</a></li>
+                <li><a class="linksToDegrees d-block mb-2" href="#" target="_blank">Internet Resource 2</a></li>
+                <li><a class="linksToDegrees d-block mb-2" href="#" target="_blank">Internet Resource 3</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Government -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h2 class="card-title mb-3 text-center">Government Material</h2>
+              <ul class="list-unstyled">
+                <li><a class="linksToDegrees d-block mb-2" href="#" target="_blank">Government Document 1</a></li>
+                <li><a class="linksToDegrees d-block mb-2" href="#" target="_blank">Government Document 2</a></li>
+                <li><a class="linksToDegrees d-block mb-2" href="#" target="_blank">Government Document 3</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
     <%- include('./components/footer') %>
   </body>
 </html>
