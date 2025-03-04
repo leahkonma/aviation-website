@@ -18,7 +18,7 @@ const getHome = (req, res) => {
 }
 
 /**
- * Renders the programs page.
+ * Renders the Programs page.
  * 
  * @function getPrograms
  * @param {Object} req - The request object.
@@ -29,7 +29,7 @@ const getPrograms = (req, res) => {
 }
 
 /**
- * Renders the resources page.
+ * Renders the Resources page.
  * 
  * @function getResources
  * @param {Object} req - The request object.
@@ -40,7 +40,7 @@ const getResources = (req, res) => {
 }
 
 /**
- * Renders the contact page.
+ * Renders the Contact page.
  * 
  * @function getContact
  * @param {Object} req - The request object.
@@ -65,7 +65,7 @@ const getProgramOutline = (req, res) => {
 /**
  * Renders the FAQ page.
  * 
- * @function getProgramOutline
+ * @function getFAQ
  * @param {Object} req - The request object.
  * @param {Object} res - The response object.
  */
@@ -74,9 +74,20 @@ const getFAQ = (req, res) => {
 }
 
 /**
- * Renders the documents page.
+ * Renders the Log-In page.
  * 
- * @function getProgramOutline
+ * @function getLogIn
+ * @param {Object} req - The request object.
+ * @param {Object} res - The response object.
+ */
+const getLogIn = (req, res) => {
+    res.render('log-in', {title: 'Log-In'});
+}
+
+/**
+ * Renders the Documents page.
+ * 
+ * @function getDocuments
  * @param {Object} req - The request object.
  * @param {Object} res - The response object.
  */
@@ -103,5 +114,6 @@ module.exports = {
     getProgramOutline,
     getDispachTrackAviationTechPlan,
     getFAQ, 
-    getDocuments
+    getDocuments,
+    getLogIn
 };

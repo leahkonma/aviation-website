@@ -5,7 +5,7 @@
  */
 
 const { Router } = require('express');
-const { getHome, getPrograms, getContact, getResources, getProgramOutline, getDispachTrackAviationTechPlan, getFAQ, getDocuments } = require('./../controllers/controller.js');
+const { getHome, getPrograms, getContact, getResources, getProgramOutline, getDispachTrackAviationTechPlan, getFAQ, getDocuments, getLogIn } = require('./../controllers/controller.js');
 
 const router = Router();
 
@@ -17,6 +17,7 @@ router.get('/resources', getResources);
 router.get('/documents', getDocuments);
 router.get('/faq', getFAQ);
 router.get('/program-outline', getProgramOutline);
+router.get('/log-in', getLogIn)
 
 // Program outline router for PDF files
 router.get('/documents/:fileName', getDispachTrackAviationTechPlan);
