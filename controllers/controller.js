@@ -81,7 +81,7 @@ const getFAQ = (req, res) => {
  * @param {Object} res - The response object.
  */
 const getLogIn = (req, res) => {
-    res.render('log-in', {title: 'Log-In'});
+    res.render('log-in', {title: 'Admin Log In'});
 }
 
 /**

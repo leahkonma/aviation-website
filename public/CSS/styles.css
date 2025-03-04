@@ -115,6 +115,12 @@ footer {
   object-fit: cover;
 }
 
+/* Log-In Page */
+.login-btn{
+  background-color: #1d7c25 !important;
+  border-color: #17611d !important;
+}
+
 
 /* Mobile styling */
 @media (max-width: 500px) {
