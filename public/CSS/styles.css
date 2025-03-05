@@ -1,3 +1,13 @@
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 /* Header*/
 header {
   width: 100%;
@@ -46,6 +56,8 @@ nav {
 
 /* Footer */
 footer {
+  margin-top: auto;
+  min-width: 100%;
   background-color: #808080;
   padding: 20px;
   text-align: center;
@@ -120,7 +132,6 @@ footer {
   background-color: #1d7c25 !important;
   border-color: #17611d !important;
 }
-
 
 /* Mobile styling */
 @media (max-width: 500px) {
