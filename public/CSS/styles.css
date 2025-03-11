@@ -133,6 +133,17 @@ footer {
   border-color: #17611d !important;
 }
 
+/* FAQ Page */
+
+.accordion-button{
+  font-weight: bold;
+}
+.accordion-button:not(.collapsed) {
+  color: black !important;
+  background-color: #b9c0b900 !important;
+}
+
+
 /* Mobile styling */
 @media (max-width: 500px) {
   header {
