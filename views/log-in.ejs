@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./components/head') %>
+    <body>
+        <%- include('./components/navbar') %>
+
+    <div class="container mt-4">
+        <h1 class="text-center">Admin Log in</h1>
+        <form action="/login" method="POST" class="w-50 mx-auto">
+            <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" id="username" name="username" class="form-control"required>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" id="password" name="password" class="form-control" required>
+            </div>
+            <div class="d-grid gap-2 col-4 mx-auto mt-4">
+                <button type="submit" class="btn btn-primary btn login-btn">Log in</button>
+            </div>
+        </form>
+    </div>
+
+  </body>
+</html>

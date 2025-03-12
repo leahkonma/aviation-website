@@ -6,83 +6,21 @@
 
 const path = require("path");
 
-/**
- * Renders the home page.
- * 
- * @function getHome
- * @param {Object} req - The request object.
- * @param {Object} res - The response object.
- */
-const getHome = (req, res) => {
-    res.render('index', {title: 'GRC Aviation'});
-}
+const getHome = (req, res) => res.render('index', {title: 'GRC Aviation'});
 
-/**
- * Renders the programs page.
- * 
- * @function getPrograms
- * @param {Object} req - The request object.
- * @param {Object} res - The response object.
- */
-const getPrograms = (req, res) => {
-    res.render('programs', {title: 'Programs'});
-}
+const getPrograms = (req, res) => res.render('programs', {title: 'Programs'});
 
-/**
- * Renders the resources page.
- * 
- * @function getResources
- * @param {Object} req - The request object.
- * @param {Object} res - The response object.
- */
-const getResources = (req, res) => {
-    res.render('resources', {title: 'Resources'});
-}
+const getResources = (req, res) => res.render('resources', {title: 'Resources'});
 
-/**
- * Renders the contact page.
- * 
- * @function getContact
- * @param {Object} req - The request object.
- * @param {Object} res - The response object.
- */
-const getContact = (req, res) => {
-    res.render('contact', {title: 'Contact'});
-}
+const getContact = (req, res) => res.render('contact', {title: 'Contact'});
 
+const getProgramOutline = (req, res) => res.render('program-outline', {title: 'Program Outline'});
 
-/**
- * Renders the Program Outline page.
- * 
- * @function getProgramOutline
- * @param {Object} req - The request object.
- * @param {Object} res - The response object.
- */
-const getProgramOutline = (req, res) => {
-    res.render('program-outline', {title: 'Program Outline'});
-}
+const getFAQ = (req, res) => res.render('faq', {title: 'FAQ'});
 
-/**
- * Renders the FAQ page.
- * 
- * @function getProgramOutline
- * @param {Object} req - The request object.
- * @param {Object} res - The response object.
- */
-const getFAQ = (req, res) => {
-    res.render('faq', {title: 'FAQ'});
-}
+const getLogIn = (req, res) => res.render('log-in', {title: 'Admin Log In'});
 
-/**
- * Renders the documents page.
- * 
- * @function getProgramOutline
- * @param {Object} req - The request object.
- * @param {Object} res - The response object.
- */
-const getDocuments = (req, res) => {
-    res.render('documents', {title: 'Documents'});
-}
+const getDocuments = (req, res) => res.render('documents', {title: 'Documents'});
 
 const getDispachTrackAviationTechPlan = (req, res) => { 
     const fileName = req.params.fileName; 
@@ -103,5 +41,6 @@ module.exports = {
     getProgramOutline,
     getDispachTrackAviationTechPlan,
     getFAQ, 
-    getDocuments
+    getDocuments,
+    getLogIn
 };
