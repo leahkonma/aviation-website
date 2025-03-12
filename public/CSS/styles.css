@@ -135,3 +135,21 @@ footer {
     }
   }
 }
+
+/* Dropdown Links for Documents Page */
+.dropdown-link {
+  color: black;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown-link:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.dropdown-link span {
+  margin-left: 0.5rem;
+}

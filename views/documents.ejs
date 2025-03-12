@@ -2,58 +2,185 @@
 <html lang="en">
   <%- include('./components/head') %>
   <body>
-    <!-- Include header/navbar -->
     <%- include('./components/navbar') %>
 
     <h1 class="text-center m-4">Documents Page</h1>
-
     <main class="container">
-      <div class="row">
-        <!-- Classes -->
-        <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <div class="card-body">
-              <h2 class="card-title mb-3 text-center">Class Material</h2>
-              <ul class="list-unstyled">
-                <li><a class="linksToDegrees d-block mb-2" href="#" target="_blank">Class Document 1</a></li>
-                <li><a class="linksToDegrees d-block mb-2" href="#" target="_blank">Class Document 2</a></li>
-                <li><a class="linksToDegrees d-block mb-2" href="#" target="_blank">Class Document 3</a></li>
-              </ul>
-            </div>
+      <ul class="list-group">
+        <!-- Aviation 123 – Aviation Weather dropdown -->
+        <li class="list-group-item">
+          <a class="dropdown-link" data-bs-toggle="collapse" href="#collapseAviation123" role="button">
+            Aviation 123 – Aviation Weather
+            <span>&#9650;</span>
+          </a>
+          <div class="collapse" id="collapseAviation123">
+            <ul class="list-unstyled mt-2">
+              <li>
+                <a href="https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28a-aviation-weather-handbook" target="_blank">
+                  FAA Aviation Weather Handbook
+                </a>
+              </li>
+              <li>
+                <a href="https://aviationweather.gov/" target="_blank">
+                  AviationWeather.gov
+                </a>
+              </li>
+              <li>
+                <a href="https://www.1800wxbrief.com/Website/#!/" target="_blank">
+                  1800WXBrief
+                </a>
+              </li>
+              <li>
+                <a href="https://skyvector.com/" target="_blank">
+                  SkyVector
+                </a>
+              </li>
+              <li>
+                <a href="https://www.spc.noaa.gov/obswx/maps/" target="_blank">
+                  SPC NOAA Observed Weather Maps
+                </a>
+              </li>
+              <li>
+                <a href="https://www.wpc.ncep.noaa.gov/html/contract.html#N" target="_blank">
+                  WPC NCEP Contract
+                </a>
+              </li>
+              <li>
+                <a href="https://aviationweather.gov/graphics/" target="_blank">
+                  Aviation Weather Graphics
+                </a>
+              </li>
+              <li>
+                <a href="https://www.cfinotebook.net/notebook/weather-and-atmosphere/obstructions-to-visibility" target="_blank">
+                  CFI Notebook – Obstructions to Visibility
+                </a>
+              </li>
+              <li>
+                <a href="https://avionicswest.com/Articles/MetarTaf.html" target="_blank">
+                  Avionics West – METAR TAF
+                </a>
+              </li>
+              <li>
+                <a href="https://ourairports.com/" target="_blank">
+                  OurAirports
+                </a>
+              </li>
+              <li>
+                <a href="https://www.scramble.nl/database/location" target="_blank">
+                  Scramble Database
+                </a>
+              </li>
+              <li>
+                <a href="https://www.cfinotebook.net/notebook/weather-and-atmosphere/winds-and-temperatures-aloft" target="_blank">
+                  CFI Notebook – Winds and Temperatures Aloft
+                </a>
+              </li>
+            </ul>
           </div>
-        </div>
-    
-        <!-- Internet -->
-        <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <div class="card-body">
-              <h2 class="card-title mb-3 text-center">Internet Material</h2>
-              <ul class="list-unstyled">
-                <li><a class="linksToDegrees d-block mb-2" href="#" target="_blank">Internet Resource 1</a></li>
-                <li><a class="linksToDegrees d-block mb-2" href="#" target="_blank">Internet Resource 2</a></li>
-                <li><a class="linksToDegrees d-block mb-2" href="#" target="_blank">Internet Resource 3</a></li>
-              </ul>
-            </div>
+        </li>
+
+        <!-- Aviation 267 – International Flight Planning and ETOPS dropdown -->
+        <li class="list-group-item">
+          <a class="dropdown-link" data-bs-toggle="collapse" href="#collapseAviation267" role="button">
+            Aviation 267 – International Flight Planning and ETOPS
+            <span>&#9650;</span>
+          </a>
+          <div class="collapse" id="collapseAviation267">
+            <ul class="list-unstyled mt-2">
+              <li>
+                <a href="https://www.sita.aero/solutions/industries/air-navigation-service-providers/" target="_blank">
+                  SITA Air Navigation Service Providers
+                </a>
+              </li>
+              <li>
+                <a href="https://www.collinsaerospace.com/what-we-do/industries/business-aviation/flight-support-services" target="_blank">
+                  Collins Aerospace Flight Support Services
+                </a>
+              </li>
+              <li>
+                <a href="https://ba.foreflight.com/blog/etp-in-aviation-a-look-at-calculations-and-planning#:~:text=An%20Equal%20Time%20Point%20(ETP,your%20departure%20and%20destination%20airports." target="_blank">
+                  ForeFlight ETP Planning
+                </a>
+              </li>
+              <li>
+                <a href="https://en.wikipedia.org/wiki/Flight_information_region" target="_blank">
+                  Wikipedia – Flight Information Region
+                </a>
+              </li>
+              <li>
+                <a href="https://www.notams.faa.gov/dinsQueryWeb/" target="_blank">
+                  FAA NOTAMs Query
+                </a>
+              </li>
+              <li>
+                <a href="https://www.theairlinepilots.com/flightplanningforairlinepilots/notamdecode.php" target="_blank">
+                  Airline Pilots NOTAM Decode
+                </a>
+              </li>
+              <li>
+                <a href="https://www.faa.gov/air_traffic/publications/atpubs/notam_html/appendix_b.html" target="_blank">
+                  FAA NOTAM Appendix B
+                </a>
+              </li>
+              <li>
+                <a href="https://notams.aim.faa.gov/notamSearch/" target="_blank">
+                  FAA NOTAM Search
+                </a>
+              </li>
+              <li>
+                <a href="https://www.eurocontrol.int/articles/ais-online" target="_blank">
+                  Eurocontrol AIS Online
+                </a>
+              </li>
+              <li>
+                <a href="http://www.gcmap.com/" target="_blank">
+                  GCMap
+                </a>
+              </li>
+              <li>
+                <a href="https://airplanemanager.com/flight-calculator" target="_blank">
+                  Airplane Manager Flight Calculator
+                </a>
+              </li>
+              <li>
+                <a href="https://www.greatcirclemapper.net/#google_vignette" target="_blank">
+                  Great Circle Mapper
+                </a>
+              </li>
+              <li>
+                <a href="https://gis.icao.int/portal/home/webmap/viewer.html?webmap=6e63373c892f47aa8d1429b8ca7cbb83" target="_blank">
+                  ICAO GIS Webmap
+                </a>
+              </li>
+            </ul>
           </div>
-        </div>
-    
-        <!-- Government -->
-        <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <div class="card-body">
-              <h2 class="card-title mb-3 text-center">Government Material</h2>
-              <ul class="list-unstyled">
-                <li><a class="linksToDegrees d-block mb-2" href="#" target="_blank">Government Document 1</a></li>
-                <li><a class="linksToDegrees d-block mb-2" href="#" target="_blank">Government Document 2</a></li>
-                <li><a class="linksToDegrees d-block mb-2" href="#" target="_blank">Government Document 3</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+        </li>
+      </ul>
     </main>
 
-    <!-- Footer -->
     <%- include('./components/footer') %>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var collapseElements = document.querySelectorAll('.collapse');
+        collapseElements.forEach(function(collapseEl) {
+          collapseEl.addEventListener('show.bs.collapse', function () {
+            var parentItem = collapseEl.closest('li');
+            var arrow = parentItem.querySelector('.dropdown-link span');
+            if (arrow) {
+              arrow.innerHTML = '&#9660;'; // down arrow when open
+            }
+          });
+          collapseEl.addEventListener('hide.bs.collapse', function () {
+            var parentItem = collapseEl.closest('li');
+            var arrow = parentItem.querySelector('.dropdown-link span');
+            if (arrow) {
+              arrow.innerHTML = '&#9650;'; // up arrow when closed
+            }
+          });
+        });
+      });
+    </script>
+
   </body>
 </html>
